@@ -22,12 +22,12 @@
 
 **Dossier** : [qualite_logiciels_app_2/](/qualite_logiciels_app_2/)
 
-### Structure :
+**Structure :**
 
 - Codes principaaux : ✅
 - Codes de tests : ✅
 
-### Résultat de Coverage
+**Résultat de Coverage:**
 
 ```
 ---- IntelliJ IDEA coverage runner ---- 
