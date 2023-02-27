@@ -2,21 +2,46 @@ package fr.ldumay.models;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 class MoneyTest {
 
-	private Money m;
-	
+	Money money1 = new Money(20, "EUR");
+
+	/**
+	 * Tests qui s'exécutent avant tous les tests.
+	 */
 	@BeforeAll
-	public void init() {
-		m = new Money(20, "EUR");
+	static void beforeAll() {
+		System.out.println("[Before all]");
 	}
-	
+
+	/*
+	@BeforeEach
+	void beforeEach() {}
+	*/
+
+	/**
+	 * Tests principaux.
+	 */
 	@Test
 	void test() {
-		assertTrue(m.amount() > 0);
+		System.out.println("[Test]");
+		//-
+		assertTrue(money1.amount() > 0);
+	}
+
+	/*
+	@AfterEach
+	void afterEach() {}
+	*/
+
+	/**
+	 * Tests qui s'exécutent après tous les tests.
+	 */
+	@AfterAll
+	static void afterAll() {
+		System.out.println("[After all]");
 	}
 
 }
