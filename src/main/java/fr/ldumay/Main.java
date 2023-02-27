@@ -1,4 +1,4 @@
-package org.example;
+package fr.ldumay;
 
 public class Main {
     public static void main(String[] args) {

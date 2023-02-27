@@ -1,6 +1,22 @@
-package org.example;
+package fr.ldumay.models;
 
 /**
+ * Classe : Money
+ * <br/>Description : Classe représentant un montant
+ * <ul>
+ *     <li>amount : int - Dois être positif</li>
+ *     <li>currency : String - Doit être chaîne de caractères de 3 caractères (norme ISO)</li>
+ *     <li>
+ *         <ul>
+ *             <li>EUR - euro</li>
+ *             <li>USD - dollar</li>
+ *             <li>CHF - franc suisse</li>
+ *             <li>GBP - livre sterling</li>
+ *         </ul>
+ *     </li>
+ *     <li>add(Money m) : Money - Addition de deux money (même devise)</li>
+ * </ul>
+ *
  * @author ldumay
  */
 public class Money {

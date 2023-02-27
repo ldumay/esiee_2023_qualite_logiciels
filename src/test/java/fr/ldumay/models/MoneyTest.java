@@ -1,17 +1,16 @@
-package org.example;
+package fr.ldumay.models;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.example.Money;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class MoneyTest {
 
-	private static Money m;
+	private Money m;
 	
 	@BeforeAll
-	public static void init() {
+	public void init() {
 		m = new Money(20, "EUR");
 	}
 	

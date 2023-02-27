@@ -1,4 +1,4 @@
-package org.example;
+package fr.ldumay.models;
 
 import java.util.HashMap;
 import java.util.Map;
