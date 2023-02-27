@@ -4,6 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
 
+/**
+ * Classe : MoneyTest
+ * <br/>Description : Classe de test de la classe Money
+ *
+ * @author ldumay
+ */
+@DisplayName("MoneyTest")
 class MoneyTest {
 
 	Money money1 = new Money(20, "EUR");
@@ -22,9 +29,10 @@ class MoneyTest {
 	*/
 
 	/**
-	 * Tests principaux.
+	 * Un test.
 	 */
 	@Test
+	@DisplayName("Test @test")
 	void test() {
 		System.out.println("[Test]");
 		//-
