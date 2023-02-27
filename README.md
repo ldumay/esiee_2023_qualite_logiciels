@@ -46,4 +46,4 @@ OK : Exception-Test
 Class transformation time: 0.022397332s for 793 classes or 2.824379823455233E-5s per class
 ```
 
-Report disponible ici : [htmlReport/index.html](/htmlReport/index.html)
+Report disponible ici : [qualite_logiciels_app_2/htmlReport/index.html](/htmlReport/index.html)
