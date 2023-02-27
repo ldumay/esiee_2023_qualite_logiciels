@@ -1,5 +1,7 @@
 package fr.ldumay.models;
 
+import fr.ldumay.eums.Currency;
+
 /**
  * Classe : Money
  * <br/>Description : Classe représentant un montant
