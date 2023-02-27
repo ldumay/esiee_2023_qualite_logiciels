@@ -1,11 +1,10 @@
-package src.test;
+package org.example;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.example.Money;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import src.data.Money;
 
 class MoneyTest {
 

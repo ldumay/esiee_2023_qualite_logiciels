@@ -1,4 +1,4 @@
-package src.data;
+package org.example;
 
 /**
  * 
