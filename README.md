@@ -113,3 +113,24 @@
     - 1er = expression - **expression**
   - 2ème paramètre facultatif :
     - message = message
+
+## La fabrique de tests
+
+- @TestFactory
+  - But : créer une fabrique de tests
+  - Retourne une liste de tests
+  - @BeforeEach / @AfterEach
+    - Exécuter seulement une fois avant et après chaque test
+  - 1 paramètre minimum :
+    - 1er = fonction anonyme - **lambda**
+  - 2ème paramètre facultatif :
+    - message = message
+
+## Les tests paramétrés
+
+- @ParameterizedTest
+  - But : créer un test paramétré
+  - 1 paramètre minimum :
+    - 1er = fonction anonyme - **lambda**
+  - 2ème paramètre facultatif :
+    - message = message
