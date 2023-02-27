@@ -2,7 +2,7 @@
 
 ## Assertions
 
-### Principaux outils de tests unitaires
+### Les principaux
 
 - assertEquals / assertArraysEquals
   - But : comparer 2 valeurs (méthode `equals` de la classe `Object`)
@@ -30,7 +30,7 @@
   - 3ème paramètre facultatif :
     - message = message
 
-### Autres outils de tests unitaires
+### Les autres
 
 - assertAll
   - But : vérifier plusieurs conditions 
@@ -61,8 +61,6 @@
 
 ## Assomptions
 
-### Principaux outils de tests unitaires
-
 - assumeFalse / assumeTrue
   - But : vérifier une condition
   - Ne retourne rien
@@ -79,4 +77,39 @@
     - 1er = valeur booléenne - **condition**
     - 2ème = fonction anonyme - **lambda**
   - 3ème paramètre facultatif :
+    - message = message
+
+## L'éxécution conditionnelle
+
+- @EnabledOnOs / @DisabledOnOs
+    - But : Activer ou désactiver un test en fonction de l'OS
+  - 1 paramètre minimum :
+    - 1er = OS - **OS**
+  - 2ème paramètre facultatif :
+    - message = message
+- @EnabledOnJre / @DisabledOnJre
+    - But : Activer ou désactiver un test en fonction de la version de Java
+  - 1 paramètre minimum :
+    - 1er = version de Java - **JRE**
+  - 2ème paramètre facultatif :
+    - message = message
+- @EnabledIfSystemProperty / @DisabledIfSystemProperty
+    - But : Activer ou désactiver un test en fonction d'une propriété système
+  - 2 paramètres minimum :
+    - 1er = nom de la propriété - **name**
+    - 2ème = valeur de la propriété - **value**
+  - 3ème paramètre facultatif :
+    - message = message
+- @EnabledIfEnvironmentVariable / @DisabledIfEnvironmentVariable
+    - But : Activer ou désactiver un test en fonction d'une variable d'environnement
+  - 2 paramètres minimum :
+    - 1er = nom de la variable - **name**
+    - 2ème = valeur de la variable - **value**
+  - 3ème paramètre facultatif :
+    - message = message
+- @EnabledIf / @DisabledIf
+    - But : Activer ou désactiver un test en fonction d'une expression
+  - 1 paramètre minimum :
+    - 1er = expression - **expression**
+  - 2ème paramètre facultatif :
     - message = message

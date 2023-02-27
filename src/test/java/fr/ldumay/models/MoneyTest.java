@@ -4,10 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.*;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * Classe : MoneyTest
@@ -118,6 +122,20 @@ class MoneyTest {
 		assumingThat(moneyEUR.amount() == 20, () -> {
 			System.out.println("True => moneyEUR.amount() == 20");
 		});
+	}
+
+	@Test
+	@EnabledOnOs(OS.MAC)
+	@DisplayName("testForMacOS() | @EnabledOnOs(OS.MAC)")
+	void testForMacOS(){
+		System.out.println("[Test MacOS]");
+	}
+
+	@Test
+	@EnabledOnOs(OS.WINDOWS)
+	@DisplayName("testForWindows() | @EnabledOnOs(OS.WINDOWS)")
+	void testForWindows(){
+		System.out.println("[Test Windows]");
 	}
 
 	@AfterEach
