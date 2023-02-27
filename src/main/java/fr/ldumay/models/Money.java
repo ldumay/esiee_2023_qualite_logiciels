@@ -14,7 +14,8 @@ package fr.ldumay.models;
  *             <li>GBP - livre sterling</li>
  *         </ul>
  *     </li>
- *     <li>add(Money m) : Money - Addition de deux money (même devise)</li>
+ *     <li>add(Money m) : Money - Ajout d'une monnaie au montant</li>
+ *     <li>add(int nAmount, String nCurrency) : Money - Ajout d'un montant et d'une devise au montant</li>
  * </ul>
  *
  * @author ldumay
@@ -52,6 +53,7 @@ public class Money {
 	 * @return
 	 */
 	public Money add(Money m) {
+		if(m==null) throw new IllegalArgumentException("Money is null");
 		if (currency().equals(m.currency())) {
 			this.fAmount += m.amount();
 		}
@@ -59,7 +61,7 @@ public class Money {
 	}
 
 	/**
-	 * namout négatif possibl
+	 * namout négatif possible
 	 *
 	 * @param nAmount
 	 * @param nCurrency

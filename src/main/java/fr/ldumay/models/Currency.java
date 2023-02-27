@@ -1,8 +1,14 @@
 package fr.ldumay.models;
 
 /**
- * Classe : Currency
- * <br/>Description : Classe des devises
+ * Classe Enum : Currency
+ * <br/>Description : Classe énumérant les devises
+ * <ul>
+ *     <li>EUR - euro</li>
+ *     <li>USD - dollar</li>
+ *     <li>CHF - franc suisse</li>
+ *     <li>GBP - livre sterling</li>
+ * </ul>
  *
  * @author ldumay
  */
