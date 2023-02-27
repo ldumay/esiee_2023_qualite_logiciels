@@ -1,4 +1,8 @@
-# esiess_2023_qualite_logiciels
+# ESIEE - 2023 - Qualité Logiciels
+
+## Requis
+
+- JDK : **17**
 
 ## Documentations
 
@@ -12,3 +16,6 @@
 - TP 1 : 
 	- **Description** : Petit programme sur **les racines carré**
 	- **Dossier** : [qualite_logiciels_app_2/](/qualite_logiciels_app_2/)
+	- Structure :
+		- Codes principaaux : ✅
+		- Codes de tests : ✅
