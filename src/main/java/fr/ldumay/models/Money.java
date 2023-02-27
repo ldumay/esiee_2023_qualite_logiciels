@@ -22,13 +22,13 @@ package fr.ldumay.models;
 public class Money {
 
 	private int fAmount;
-	private String fCurrency;
+	private Currency fCurrency;
 
 	/**
 	 * @param amount
 	 * @param currency
 	 */
-	public Money(int amount, String currency) {
+	public Money(int amount, Currency currency) {
 		fAmount = amount;
 		fCurrency = currency;
 	}
@@ -43,7 +43,7 @@ public class Money {
 	/**
 	 * @return
 	 */
-	public String currency() {
+	public Currency currency() {
 		return fCurrency;
 	}
 
@@ -65,7 +65,7 @@ public class Money {
 	 * @param nCurrency
 	 * @return
 	 */
-	public Money add(int nAmount, String nCurrency) {
+	public Money add(int nAmount, Currency nCurrency) {
 		if (currency().equals(nCurrency)) {
 			this.fAmount += nAmount;
 		}

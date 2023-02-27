@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Classe : MoneyTest
  * <br/>Description : Classe de test de la classe Money
@@ -13,7 +16,8 @@ import org.junit.jupiter.api.*;
 @DisplayName("MoneyTest")
 class MoneyTest {
 
-	Money money1 = new Money(20, "EUR");
+	Money moneyEUR = new Money(20, Currency.EUR);
+	Money moneyGBP = new Money(30, Currency.GBP);
 
 	/**
 	 * Tests qui s'exécutent avant tous les tests.
@@ -23,26 +27,33 @@ class MoneyTest {
 		System.out.println("[Before all]");
 	}
 
-	/*
 	@BeforeEach
-	void beforeEach() {}
-	*/
-
-	/**
-	 * Un test.
-	 */
-	@Test
-	@DisplayName("Test @test")
-	void test() {
-		System.out.println("[Test]");
-		//-
-		assertTrue(money1.amount() > 0);
+	void beforeEach() {
+		System.out.println("[Before each]");
 	}
 
-	/*
+	/**
+	 * Un test de démonstration
+	 */
+	@Test
+	@DisplayName("Test @testDemo")
+	void testDemo() {
+		System.out.println("[Test - @testDemo]");
+	}
+
+	@Test
+	@DisplayName("Test assertEquals on methods @add")
+	void add() {
+		System.out.println("[Test - assertEquals on methods @add]");
+		//-
+		assertEquals(40, moneyEUR.add(20, Currency.EUR).amount());
+		assertEquals(70, moneyGBP.add(new Money(40, Currency.GBP)).amount());
+	}
+
 	@AfterEach
-	void afterEach() {}
-	*/
+	void afterEach() {
+		System.out.println("[After each]");
+	}
 
 	/**
 	 * Tests qui s'exécutent après tous les tests.
