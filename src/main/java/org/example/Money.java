@@ -1,8 +1,7 @@
 package org.example;
 
 /**
- * 
- * @author MaxHenn
+ * @author ldumay
  */
 public class Money {
 
@@ -10,7 +9,6 @@ public class Money {
 	private String fCurrency;
 
 	/**
-	 * 
 	 * @param amount
 	 * @param currency
 	 */
@@ -20,7 +18,6 @@ public class Money {
 	}
 
 	/**
-	 * 
 	 * @return
 	 */
 	public int amount() {
@@ -28,7 +25,6 @@ public class Money {
 	}
 
 	/**
-	 * 
 	 * @return
 	 */
 	public String currency() {
@@ -36,7 +32,6 @@ public class Money {
 	}
 
 	/**
-	 * 
 	 * @param m
 	 * @return
 	 */
@@ -48,7 +43,8 @@ public class Money {
 	}
 
 	/**
-	 * 
+	 * namout négatif possibl
+	 *
 	 * @param nAmount
 	 * @param nCurrency
 	 * @return
