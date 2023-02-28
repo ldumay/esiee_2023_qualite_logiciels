@@ -29,6 +29,8 @@
 
 **Résultat de Coverage:**
 
+![img](_img/coverage_tp1.png)
+
 ```
 ---- IntelliJ IDEA coverage runner ---- 
 sampling ...
@@ -38,12 +40,15 @@ exclude patterns:
 exclude annotations patterns:
 .*Generated.*
 Résultats des tests :
-OK : Timeout-Test
+OK : Execution-Test-allRacineCarree()
 OK : After-Test
-OK : Execution-Test
+OK : Exception-Test-RacineCarree
+OK : Exception-Test-AllRacineCarree
 OK : Before-Test
-OK : Exception-Test
-Class transformation time: 0.022397332s for 793 classes or 2.824379823455233E-5s per class
+OK : Execution-Test-RacineCarree
+OK : Timeout-Test-RacineCarree
+OK : Timeout-Test-AllRacineCarree
+Class transformation time: 0.023668568s for 757 classes or 3.126627212681638E-5s per class
 ```
 
 Report disponible ici : `qualite_logiciels_app_2/htmlReport/index.html`

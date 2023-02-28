@@ -39,6 +39,16 @@ public class Calcul {
      * @return : Double[] - Tableau des racines carrées des nombres compris entre A et B
      */
     public Double[] allRacineCarree(Integer a, Integer b) {
+        //Vérification de la non-nullité des paramètres
+        if(a==null) throw new IllegalArgumentException("Entier a nul");
+        else if(b==null) throw new IllegalArgumentException("Entier b nul");
+        else if(a==null && b==null) throw new IllegalArgumentException("Entier a et b nuls");
+
+        //Vérification de la valeur du paramètre
+        if(a<0) throw new IllegalArgumentException("Entier a négatif");
+        else if(b<0) throw new IllegalArgumentException("Entier b négatif");
+        else if(a<0 && b<0) throw new IllegalArgumentException("Entier a et b négatifs");
+
         Double[] tab = new Double[b - a + 1];
         for (int i = a; i <= b; i++) {
             tab[i - a] = racineCarree(i);

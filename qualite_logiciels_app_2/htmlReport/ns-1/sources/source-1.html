@@ -51,18 +51,18 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    66,7%
+    100%
   </span>
   <span class="absValue">
-    (2/3)
+    (3/3)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    50%
+    100%
   </span>
   <span class="absValue">
-    (4/8)
+    (14/14)
   </span>
 </td>
 </tr>
@@ -115,11 +115,21 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;     * @return : Double[] - Tableau des racines carrées des nombres compris entre A et B
 &nbsp;     */
 &nbsp;    public Double[] allRacineCarree(Integer a, Integer b) {
-<b class="nc">&nbsp;        Double[] tab = new Double[b - a + 1];</b>
-<b class="nc">&nbsp;        for (int i = a; i &lt;= b; i++) {</b>
-<b class="nc">&nbsp;            tab[i - a] = racineCarree(i);</b>
+&nbsp;        //Vérification de la non-nullité des paramètres
+<b class="fc">&nbsp;        if(a==null) throw new IllegalArgumentException(&quot;Entier a nul&quot;);</b>
+<b class="fc">&nbsp;        else if(b==null) throw new IllegalArgumentException(&quot;Entier b nul&quot;);</b>
+<b class="fc">&nbsp;        else if(a==null &amp;&amp; b==null) throw new IllegalArgumentException(&quot;Entier a et b nuls&quot;);</b>
+&nbsp;
+&nbsp;        //Vérification de la valeur du paramètre
+<b class="fc">&nbsp;        if(a&lt;0) throw new IllegalArgumentException(&quot;Entier a négatif&quot;);</b>
+<b class="fc">&nbsp;        else if(b&lt;0) throw new IllegalArgumentException(&quot;Entier b négatif&quot;);</b>
+<b class="fc">&nbsp;        else if(a&lt;0 &amp;&amp; b&lt;0) throw new IllegalArgumentException(&quot;Entier a et b négatifs&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;        Double[] tab = new Double[b - a + 1];</b>
+<b class="fc">&nbsp;        for (int i = a; i &lt;= b; i++) {</b>
+<b class="fc">&nbsp;            tab[i - a] = racineCarree(i);</b>
 &nbsp;        }
-<b class="nc">&nbsp;        return tab;</b>
+<b class="fc">&nbsp;        return tab;</b>
 &nbsp;    }
 &nbsp;}
 </code>
@@ -145,7 +155,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2023-02-28 10:14</div>
+    <div style="float:right;">generated on 2023-02-28 14:52</div>
 </div>
 </body>
 </html>
