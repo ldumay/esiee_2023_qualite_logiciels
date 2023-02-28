@@ -27,7 +27,7 @@
 - Codes principaux : ✅
 - Codes de tests : ✅
 
-**Résultat de Coverage:**
+**Résultat de la couverture des tests :**
 
 ![img](_img/coverage_tp1.png)
 
@@ -53,8 +53,14 @@ Class transformation time: 0.023668568s for 757 classes or 3.126627212681638E-5s
 
 Report disponible ici : `qualite_logiciels_app_2/htmlReport/index.html`
 
-### 3.3 - Excercices d'entrenement : 
+### 3.3 - Excercices d'entrainement : 
 
 **Description** : Petit programme sur **les racines carrée**
 
 **Dossier** : [qualite_logiciels_app_3/](/qualite_logiciels_app_3/)
+
+![img](_img/1_Diagrammes-UI.png)
+
+![img](_img/2_Diagrammes_Uses_Cases.png)
+
+![img](_img/3-Diagrammes-Class%20Diagram.png)
