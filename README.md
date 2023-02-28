@@ -1,22 +1,22 @@
 # ESIEE - 2023 - Qualité Logiciels
 
-## Requis
+## 1 - Requis
 
 - JDK : **17**
 
-## Documentations
+## 2 - Documentations
 
 - [Documentation JUnit](Doc_JUnit.md)
 
-## Applications
+## 3 - Applications
 
-### Excerices d'entrenement :
+### 3.1 - Excercices d'entrenement :
 
 **Description** : Petit programme de test
 
 **Dossier** : [qualite_logiciels_app_1/](/qualite_logiciels_app_1/)
 
-### TP 1 : 
+### 3.2 - TP 1 : 
 
 **Description** : Petit programme sur **les racines carrée**
 
@@ -24,7 +24,7 @@
 
 **Structure :**
 
-- Codes principaaux : ✅
+- Codes principaux : ✅
 - Codes de tests : ✅
 
 **Résultat de Coverage:**
@@ -47,3 +47,9 @@ Class transformation time: 0.022397332s for 793 classes or 2.824379823455233E-5s
 ```
 
 Report disponible ici : `qualite_logiciels_app_2/htmlReport/index.html`
+
+### 3.3 - Excercices d'entrenement : 
+
+**Description** : Petit programme sur **les racines carrée**
+
+**Dossier** : [qualite_logiciels_app_3/](/qualite_logiciels_app_3/)
