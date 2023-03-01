@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ldumay.views.CalculView">
+   <opaqueInsets>
+       <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </opaqueInsets>
+   <padding>
+       <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+   <top>
+      <Pane prefHeight="74.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="38.0" layoutY="26.0" text="Les racines carrée comprises entre A et B" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="148.0" layoutY="21.0" text="Nomrbe entier A" />
+            <Label layoutX="148.0" layoutY="97.0" text="Nombre entier B" />
+            <TextField fx:id="textFieldNombreEntierA" layoutX="42.0" layoutY="50.0" prefHeight="26.0" prefWidth="300.0" />
+            <TextField fx:id="textFieldNombreEntierB" layoutX="42.0" layoutY="131.0" prefHeight="26.0" prefWidth="300.0" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="67.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonValiderEntierAetB" layoutX="143.0" layoutY="20.0" mnemonicParsing="false" text="Valider A et B">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
