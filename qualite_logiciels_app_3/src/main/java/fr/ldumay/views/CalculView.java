@@ -24,6 +24,11 @@ public class CalculView implements Initializable {
     public CalculView() {
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        buttonValiderEntierAetB.setOnAction(event -> buttonValiderEntierAetBOnAction());
+    }
+
     /**
      * Méthode appelée lors du clic sur le bouton "Valider"
      * Celle-ci permet de vérifier que les deux champs sont remplis et que les deux valeurs sont des entiers.
@@ -55,7 +60,4 @@ public class CalculView implements Initializable {
             }
         }
     }
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {}
 }
