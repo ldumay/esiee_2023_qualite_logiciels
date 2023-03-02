@@ -6,12 +6,13 @@
 
 ## Sommaire
 
-- [1 - Pré-requis](#1)
-- [2 - Documentations](#2)
-- [3 - Applications](#3)
-	- [3.1 - Excercices d'entrenement](#3_1)
-	- [3.2 - TP 1](#3_2)
-	- [3.3 - TP 2 Rendu](#3_3)
+- [1 - Description](#1)
+- [2 - Dossier du projet](#2)
+- [3 - Conception du projet](#3)
+	- [3.1 - Schéma de l'interface](#3_1)
+	- [3.2 - Diagrammes UML](#3_2)
+	- [3.3 - Rendu de l'application](#3_3)
+    - [3.4 - Documentations des tests](#3_4)
 
 ## 1 - Description - [Haut de page](#top) <a name="1"></a>
 
@@ -19,7 +20,7 @@ L'application 3 est un petit programme sur **les racines carrée** permet de cal
 
 ## 2 - Dossier du projet - [Haut de page](#top) <a name="2"></a>
 
-Le projet se trouve dns le dossier [qualite_logiciels_app_3/](/qualite_logiciels_app_3/).
+Le projet se trouve dans le dossier [qualite_logiciels_app_3/](/qualite_logiciels_app_3/).
 
 ## 3 - Conception du projet - [Haut de page](#top) <a name="3"></a>
 
@@ -38,3 +39,7 @@ Le projet se trouve dns le dossier [qualite_logiciels_app_3/](/qualite_logiciels
 ![img](_img/Tp_rendu_1.png)
 
 ![img](_img/Tp_rendu_2.png)
+
+### 3.4 - Documentations des tests - [Haut de page](#top) <a name="3_4"></a>
+
+La documentation des tests du projet se trouve dans le dossier [qualite_logiciels_app_3/docs/](/qualite_logiciels_app_3/docs/).
