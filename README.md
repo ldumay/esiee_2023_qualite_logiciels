@@ -62,7 +62,7 @@ Class transformation time: 0.023668568s for 757 classes or 3.126627212681638E-5s
 
 Report disponible ici : `qualite_logiciels_app_2/htmlReport/index.html`
 
-### 3.3 - TP 2 Rendu - [Haut de page](#top) <a name="3_3"></a>
+### 3.3 - TP 2 Qualité Logiciels Racine Carrées - [Haut de page](#top) <a name="3_3"></a>
 
 **Description** : Petit programme sur **les racines carrée**
 
