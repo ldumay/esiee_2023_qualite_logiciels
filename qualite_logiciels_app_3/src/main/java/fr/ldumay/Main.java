@@ -1,5 +1,6 @@
 package fr.ldumay;
 
+import fr.ldumay.models.Calcul;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,10 +12,15 @@ public class Main extends Application {
 
     private String APP_NAME = "Les racines carrées entre A et B";
     private Scene scene;
+    //-
+    public static Calcul calcul = new Calcul();
+    public static Integer a = 0;
+    public static Integer b = 0;
+    public static Double[] resultatsAllRacineCarree;
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("CalculView.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        scene = new Scene(fxmlLoader.load());
         primaryStage.setTitle(APP_NAME);
         primaryStage.setScene(scene);
         primaryStage.show();
