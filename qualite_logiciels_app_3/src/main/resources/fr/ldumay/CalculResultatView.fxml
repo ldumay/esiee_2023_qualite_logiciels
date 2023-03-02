@@ -4,11 +4,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ldumay.views.CalculView">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ldumay.views.CalculResultatView">
     <top>
         <Pane prefHeight="74.0" prefWidth="534.0" BorderPane.alignment="CENTER">
             <children>
-                <Label layoutX="38.0" layoutY="26.0" text="Les racines carrée comprises entre A et B" textAlignment="CENTER">
+                <Label layoutX="51.0" layoutY="26.0" text="Les racines carrée comprises entre A et B" textAlignment="CENTER">
                     <font>
                         <Font size="18.0" />
                     </font>
@@ -18,20 +18,12 @@
     <center>
         <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TextArea fx:id="textAreaResults" editable="false" layoutX="68.0" layoutY="43.0" prefHeight="154.0" prefWidth="264.0" />
-            <Label layoutX="175.0" layoutY="14.0" text="Résultats" />
+            <TextArea fx:id="textAreaResults" editable="false" layoutX="48.0" layoutY="38.0" prefHeight="195.0" prefWidth="315.0" />
+            <Label layoutX="180.0" layoutY="14.0" text="Résultats" />
          </children>
         </Pane>
     </center>
     <bottom>
-        <Pane prefHeight="67.0" prefWidth="534.0" BorderPane.alignment="CENTER">
-            <children>
-                <Button fx:id="buttonCloseResults" layoutX="170.0" layoutY="20.0" mnemonicParsing="false" text="Fermer">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Button>
-            </children>
-        </Pane>
+        <Pane prefHeight="25.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
     </bottom>
 </BorderPane>

@@ -27,9 +27,6 @@ public class CalculView implements Initializable {
     @FXML
     private Label labelError = new Label();
     //-
-    private Integer a = 0;
-    private Integer b = 0;
-    private Calcul calcul = new Calcul();
     private String error;
     // -
     public static Scene scene;
@@ -64,16 +61,17 @@ public class CalculView implements Initializable {
             updateError(error);
         } else {
             try {
-                a = Integer.parseInt(textFieldNombreEntierA.getText());
-                b = Integer.parseInt(textFieldNombreEntierB.getText());
-                System.out.println("a = " + a + " et b = " + b);
+                Main.a = Integer.parseInt(textFieldNombreEntierA.getText());
+                Main.b = Integer.parseInt(textFieldNombreEntierB.getText());
+                System.out.println("a = " + Main.a + " et b = " + Main.b);
             } catch (NumberFormatException e) {
                 updateError("Veuillez saisir des entiers");
             }
         }
         //-
-        if(a != 0 && b != 0) {
-            openCalculResultatView(a, b, calcul.allRacineCarree(a, b));
+        if(Main.a != 0 && Main.b != 0) {
+            Main.resultatsAllRacineCarree = Main.calcul.allRacineCarree(Main.a, Main.b);
+            openCalculResultatView();
         }
     }
 
@@ -84,11 +82,9 @@ public class CalculView implements Initializable {
             labelError.setText("");
     }
 
-    public void openCalculResultatView(int a, int b, Double[] resultatsAllRacineCarree) throws IOException {
+    public void openCalculResultatView() throws IOException {
         System.out.println("Open view : About");
         //-
-        CalculResultatView calculResultatView = new CalculResultatView();
-        calculResultatView.chargerLesResultats(a, b, resultatsAllRacineCarree);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("CalculResultatView.fxml"));
         scene = new Scene(fxmlLoader.load());
         primaryStage = new Stage();
@@ -96,8 +92,4 @@ public class CalculView implements Initializable {
         primaryStage.initModality(Modality.WINDOW_MODAL);
         primaryStage.show();
     }
-
-    //The getters
-    public String getError() {return error;}
-
 }

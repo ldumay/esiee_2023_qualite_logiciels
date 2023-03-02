@@ -12,32 +12,30 @@ import java.util.ResourceBundle;
 public class CalculResultatView implements Initializable {
 
     @FXML
-    private TextArea textAreaResults = new TextArea();
-
-    @FXML
-    private Button buttonCloseResults = new Button();
+    public TextArea textAreaResults;
+    //-
+    private String results;
 
     @Override
-    public void initialize(URL location, ResourceBundle resources) {}
+    public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("CalculResultatView - Affiche");
+        //- Affiche les résultats
+        textAreaResults.setText(results);
+        System.out.println(textAreaResults.getText());
+    }
 
     public CalculResultatView() {
-        init();
+        System.out.println("CalculResultatView - Init");
+        chargerLesResultats();
     }
 
-    private void init(){
-        textAreaResults = new TextArea();
-        buttonCloseResults = new Button();
-    }
-
-    public void chargerLesResultats(int a, int b, Double[] resultatsAllRacineCarree){
-        String results = "Les racines carrées entre A="+ a + " et B=" + b + " sont : ";
+    private void chargerLesResultats(){
+        results = "Les racines carrées entre A="+ Main.a + " et B=" + Main.b + " sont : ";
         //-
-        if(resultatsAllRacineCarree.length > 0){
-            for (int i = 0; i < resultatsAllRacineCarree.length; i++) {
-                results += "\n--> racine carrée de " + (a + i) + " = " + resultatsAllRacineCarree[i];
+        if(Main.resultatsAllRacineCarree.length > 0){
+            for (int i = 0; i < Main.resultatsAllRacineCarree.length; i++) {
+                results += "\n--> racine carrée de " + (Main.a + i) + " = " + Main.resultatsAllRacineCarree[i];
             }
         }
-        //-
-        textAreaResults.setText(results);
     }
 }
