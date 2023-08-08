@@ -1,6 +1,6 @@
 # ESIEE-IT - 2023 - Qualité Logiciels <a name="top"></a>
 
-> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/esiee-it_2023_qualite_logiciels](https://github.com/2023-esiee-projectlab/esiee-it_2023_qualite_logiciels)**
+> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/M2_qualite_logiciels](https://github.com/2023-esiee-projectlab/M2_qualite_logiciels)**
 
 ## Sommaire
 
